@@ -13,6 +13,7 @@ module.exports =  {
   },
   plugins: [
     'react',
+    'jsx-a11y', 
     'import'
   ],
   rules:  {
@@ -49,7 +50,14 @@ module.exports =  {
     'react/no-array-index-key': [0], //允许使用array index作为key
     'react/no-danger': [0], // 允许用 dangerouslySetInnerHTML
     'react/jsx-one-expression-per-line': [0], // 允许文字和变量同行
-
+ 
+    // jsx-a11y相关规则
+    'jsx-a11y/click-events-have-key-events': [0], // 不强制要求绑定click事件时绑定键盘事件
+    'jsx-a11y/no-noninteractive-element-interactions': [0], // 不强制要求标签种类绑定事件
+    'jsx-a11y/no-static-element-interactions': [0], // 可以在静态元素交互
+    'jsx-a11y/anchor-is-valid': [0], // 可以使用无效的<a></a>
+    'jsx-a11y/alt-text': [0], // 允许img不加alt
+ 
  
     // import相关规则
     'import/no-dynamic-require': [0], // 允许使用require变量

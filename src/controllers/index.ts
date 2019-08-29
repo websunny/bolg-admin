@@ -1,3 +1,5 @@
-import Main from './Main'
+import user from './user'
 
-export default [...Main]
+export {
+  user
+}

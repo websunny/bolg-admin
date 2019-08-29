@@ -2,8 +2,10 @@
     "compilerOptions": {
       "target": "ES6",
       "module": "commonjs",
+      "noEmitOnError": true,
+      "noImplicitAny": true,
+      "experimentalDecorators": true,
       "sourceMap": true,
-      "jsx": "react",
       "sourceRoot": "src",
       "outDir": "dist"
     },
