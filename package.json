@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && ts-node  ./src/index.ts",
+    "start": "ts-node  ./src/index.ts",
     "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/index.ts"
   },
   "keywords": [
@@ -16,16 +16,19 @@
   "author": "webSunny",
   "license": "ISC",
   "dependencies": {
-    "@types/koa-router": "^7.0.42",
     "jsonwebtoken": "^8.3.0",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.0",
     "koa-jwt": "^3.3.2",
     "koa-router": "^7.4.0",
     "koa2-cors": "^2.0.6",
-    "mongoose": "^5.1.0"
+    "mongoose": "^5.1.0",
+    "tsconfig-paths": "^3.8.0",
+    "ts-node": "^6.0.3",
+    "typescript": "^3.0.0"
   },
   "devDependencies": {
+    "@types/koa-router": "^7.0.42",
     "@types/jsonwebtoken": "^7.2.8",
     "@types/koa": "^2.0.45",
     "@types/koa-bodyparser": "^4.2.0",
@@ -33,8 +36,6 @@
     "@types/koa2-cors": "^2.0.1",
     "@types/mongoose": "^5.0.13",
     "@types/node": "^10.0.8",
-    "nodemon": "^1.17.4",
-    "ts-node": "^6.0.3",
-    "typescript": "^3.0.0"
+    "nodemon": "^1.17.4"
   }
 }

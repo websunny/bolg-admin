@@ -1,0 +1,12 @@
+{
+    "apps": [{
+        "name": "blog-server",
+        "interpreter": "./node_modules/.bin/ts-node",
+        "interpreter_args": "-P ./src -r tsconfig-paths/register",
+        "script": "./src/index.ts",
+        "watch": false,
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
