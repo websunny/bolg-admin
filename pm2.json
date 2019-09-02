@@ -4,6 +4,7 @@
         "interpreter": "./node_modules/.bin/ts-node",
         "interpreter_args": "-P ./src -r tsconfig-paths/register",
         "script": "./src/index.ts",
+        "cwd": "./",
         "watch": false,
         "env": {
             "PORT": 3000,
