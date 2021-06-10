@@ -75,6 +75,11 @@
   resolved "http://npm.vpgame.cn/@types%2fhttp-assert/-/http-assert-1.5.1.tgz#d775e93630c2469c2f980fc27e3143240335db3b"
   integrity sha1-13XpNjDCRpwvmA/CfjFDJAM12zs=
 
+"@types/json5@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
+  integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
+
 "@types/jsonwebtoken@^7.2.8":
   version "7.2.8"
   resolved "http://npm.vpgame.cn/@types%2fjsonwebtoken/-/jsonwebtoken-7.2.8.tgz#8d199dab4ddb5bba3234f8311b804d2027af2b3a"
@@ -107,6 +112,13 @@
   integrity sha1-sw/oqWu+GuxEzW2iTZHylj5i478=
   dependencies:
     koa-jwt "*"
+
+"@types/koa-router@^7.0.42":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.2.tgz#b12d7095e844f4d0081b32742691a4d2e5a8046a"
+  integrity sha512-A9fTLdSHeLQpmtAPUKvvmG+xHHH5Yclqhlmz1bd5BTfdvNo37H8hzNaNpO2mgUri8Wk8fRH9NLpFRHW0wqraAw==
+  dependencies:
+    "@types/koa" "*"
 
 "@types/koa2-cors@^2.0.1":
   version "2.0.1"
@@ -1263,6 +1275,13 @@ json-buffer@3.0.0:
   resolved "http://npm.vpgame.cn/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+  dependencies:
+    minimist "^1.2.0"
+
 jsonwebtoken@8.5.1, jsonwebtoken@^8.3.0:
   version "8.5.1"
   resolved "http://npm.vpgame.cn/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
@@ -1783,9 +1802,9 @@ normalize-path@^3.0.0:
   integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
 
 normalize-url@^4.1.0:
-  version "4.3.0"
-  resolved "http://npm.vpgame.cn/normalize-url/-/normalize-url-4.3.0.tgz#9c49e10fc1876aeb76dba88bf1b2b5d9fa57b2ee"
-  integrity sha512-0NLtR71o4k6GLP+mr6Ty34c5GA6CMoEsncKJxvQd8NzPxaHRJNnb5gZE8R1XF4CPIS7QPHLJ74IFszwtNVAHVQ==
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.1.tgz#0dd90cf1288ee1d1313b87081c9a5932ee48518a"
+  integrity sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==
 
 npm-bundled@^1.0.1:
   version "1.0.6"
@@ -2366,6 +2385,11 @@ strip-ansi@^5.1.0:
   dependencies:
     ansi-regex "^4.1.0"
 
+strip-bom@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
+
 strip-eof@^1.0.0:
   version "1.0.0"
   resolved "http://npm.vpgame.cn/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
@@ -2458,6 +2482,16 @@ ts-node@^6.0.3:
     mkdirp "^0.5.1"
     source-map-support "^0.5.6"
     yn "^2.0.0"
+
+tsconfig-paths@^3.8.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz#098547a6c4448807e8fcb8eae081064ee9a3c90b"
+  integrity sha512-dRcuzokWhajtZWkQsDVKbWyY+jgcLC5sqJhg2PSgf4ZkH2aHPvaOY8YWGhmjb68b5qqTfasSsDO9k7RUiEmZAw==
+  dependencies:
+    "@types/json5" "^0.0.29"
+    json5 "^1.0.1"
+    minimist "^1.2.0"
+    strip-bom "^3.0.0"
 
 type-fest@^0.3.0:
   version "0.3.1"
